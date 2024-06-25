@@ -1,5 +1,9 @@
 import { useState } from "react";
 import PasswordLength from "./components/PasswordLength";
+import IncludeUppercase from "./components/IncludeUppercase";
+import IncludeLowercase from "./components/IncludeLowercase";
+import IncludeNumbers from "./components/IncludeNumbers";
+import IncludeSymbols from "./components/IncludeSymbols";
 
 function App() {
   const [password, setPassword] = useState<String | null>(null);
@@ -15,6 +19,22 @@ function App() {
         <PasswordLength
           passwordLength={passwordLength}
           setPasswordLength={setPasswordLength}
+        />
+        <IncludeUppercase
+          includeUppercase={includeUppercase}
+          setIncludeUppercase={setIncludeUppercase}
+        />
+        <IncludeLowercase
+          includeLowercase={includeLowercase}
+          setIncludeLowercase={setIncludeLowercase}
+        />
+        <IncludeNumbers
+          includeNumbers={includeNumbers}
+          setIncludeNumbers={setIncludeNumbers}
+        />
+        <IncludeSymbols
+          includeSymbols={includeSymbols}
+          setIncludeSymbols={setIncludeSymbols}
         />
       </div>
     </div>

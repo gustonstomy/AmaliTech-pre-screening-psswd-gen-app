@@ -1,9 +1,26 @@
-import React from 'react'
+import { ChangeEvent } from "react";
 
-export default function IncludeLowercase() {
+type IncludeLowercaseProps = {
+  includeLowercase: boolean;
+  setIncludeLowercase: (include: boolean) => void;
+};
+export default function IncludeLowercase({
+  includeLowercase,
+  setIncludeLowercase,
+}: IncludeLowercaseProps) {
+  function handleIncludeLowercaseChange(event: ChangeEvent<HTMLInputElement>) {
+    setIncludeLowercase(!includeLowercase);
+  }
   return (
-    <div>
-      
+    <div className="mb-2">
+      <input
+        type="checkbox"
+        id="includeLowercase"
+        checked={includeLowercase}
+        className="mr-2"
+        onChange={handleIncludeLowercaseChange}
+      />
+      <label htmlFor="includeLowercase">Include Lowercase Letters</label>
     </div>
-  )
+  );
 }
