@@ -16,7 +16,7 @@ export default {
         "yellow-color":" rgb(248, 205, 101)",
         "green-color":" rgb(164, 255, 175)",
         "white-color":" rgb(230, 229, 234)",
-        "Darggrey-color":" rgb(128, 124, 146)",
+        "Darkgrey-color":" rgb(128, 124, 146)",
         "black-color":" rgb(24, 23, 31)",
         "Greycolor": "rgb(36, 35, 44)"
 

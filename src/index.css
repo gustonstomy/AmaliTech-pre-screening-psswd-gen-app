@@ -3,3 +3,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    input[type="checkbox"]{
+        @apply accent-GreenColor;
+    }
+}
+
+input[type="range"] {
+    background: black;
+    outline: none; 
+    opacity: 0.7; 
+    transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #E6E5EA;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    border: 1px solid #A4FFAF;
+    background: #18171F;
+}
+
+.copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn .icon {
+  transition: color 0.3s;
+}
+
+.copy-btn .icon:hover {
+  color: grey;
+}
+
+.text-green-500 {
+  color: #22c55e;
+}

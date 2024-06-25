@@ -26,6 +26,9 @@ export default function PasswordLength({
         value={passwordLength}
         className="w-full appearance-none h-1"
         onChange={handlePasswordLengthChange}
+        style={{
+          background: `linear-gradient(to right, #A4FFAF ${(passwordLength - 4) * (100 / 16)}%, black ${(passwordLength - 4) * (100 / 16)}%)`
+        }}
       />
     </div>
   );

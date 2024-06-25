@@ -1,10 +1,10 @@
 type GeneratePasswordOptions = {
   length: number;
   includeUppercase: boolean;
-  includeLowerercase: boolean;
+  includeLowercase: boolean;
   includeNumbers: boolean;
   includeSymbols: boolean;
-};
+}
 const LOWERCASE_LETTERS = "abcdefghijklmnopqrstuvwxyz";
 const UPPERCASE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const NUMBERS = "0123456789";
@@ -13,12 +13,12 @@ const SYMBOLS = "!@#$%^&*()_-+={}[]|;:<>,.?/~`";
 function generatePassword({
   length,
   includeUppercase,
-  includeLowerercase,
+  includeLowercase,
   includeNumbers,
   includeSymbols,
 }: GeneratePasswordOptions) {
   let chars = "";
-  if (includeLowerercase) chars += LOWERCASE_LETTERS;
+  if (includeLowercase) chars += LOWERCASE_LETTERS;
   if (includeUppercase) chars += UPPERCASE_LETTERS;
   if (includeNumbers) chars += NUMBERS;
   if (includeSymbols) chars += SYMBOLS;
@@ -30,4 +30,4 @@ function generatePassword({
   return password;
 }
 
-export default { generatePassword };
+export  { generatePassword } ;
