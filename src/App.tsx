@@ -6,6 +6,7 @@ import IncludeNumbers from "./components/IncludeNumbers";
 import IncludeSymbols from "./components/IncludeSymbols";
 import { generatePassword } from "./utils/generatePassword";
 import PasswordDisplay from "./components/PasswordDisplay";
+import Strength from "./components/Strength";
 
 
 function App() {
@@ -50,6 +51,13 @@ function App() {
         <IncludeSymbols
           includeSymbols={includeSymbols}
           setIncludeSymbols={setIncludeSymbols}
+        />
+         <Strength 
+          length={passwordLength}
+          includeUppercase={includeUppercase}
+          includeLowercase={includeLowercase}
+          includeNumbers={includeNumbers}
+          includeSymbols={includeSymbols}
         />
         <button onClick={handleGeneratePassword}
         className="px-4 py-2 bg-GreenColor rounded-md

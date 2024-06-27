@@ -8,7 +8,7 @@ export default function IncludeLowercase({
   includeLowercase,
   setIncludeLowercase,
 }: IncludeLowercaseProps) {
-  function handleIncludeLowercaseChange(event: ChangeEvent<HTMLInputElement>) {
+  function handleIncludeLowercaseChange(_event: ChangeEvent<HTMLInputElement>) {
     setIncludeLowercase(!includeLowercase);
   }
   return (

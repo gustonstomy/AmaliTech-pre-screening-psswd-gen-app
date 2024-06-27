@@ -42,13 +42,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .copy-btn .icon {
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 
 .copy-btn .icon:hover {
   color: grey;
 }
 
-.text-green-500 {
-  color: #22c55e;
-}

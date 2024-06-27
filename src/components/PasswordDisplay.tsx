@@ -29,8 +29,9 @@ export default function PasswordDisplay({ password }: PasswordDisplayProps) {
         datatype="copy" 
         onClick={handleCopy}
       >
-        <AiOutlineCopy className="icon w-[21px] h-[24px] text-GreenColor hover:white-color" />
         {isCopied && <span className="ml-2 text-sm text-green-500">Copied</span>}
+        <AiOutlineCopy className="icon w-[21px] h-[24px] text-GreenColor hover:white-color" />
+        
       </button>
     </div>
   );
