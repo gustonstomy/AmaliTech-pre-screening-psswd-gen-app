@@ -21,13 +21,13 @@ export default function PasswordLength({
       <input
         type="range"
         id="passwordLength"
-        min="4"
+        min="0"
         max="20"
         value={passwordLength}
         className="w-full appearance-none h-1"
         onChange={handlePasswordLengthChange}
         style={{
-          background: `linear-gradient(to right, #A4FFAF ${(passwordLength - 4) * (100 / 16)}%, black ${(passwordLength - 4) * (100 / 16)}%)`
+          background: `linear-gradient(to right, #A4FFAF ${passwordLength * 5}%, black ${passwordLength * 5}%)`
         }}
       />
     </div>

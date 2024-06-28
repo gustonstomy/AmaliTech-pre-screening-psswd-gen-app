@@ -1,0 +1,28 @@
+:root{
+  --red-color: rgb(246, 74, 74);
+  --orange-color: rgb(251, 124, 88);
+  --yellow-color: rgb(248, 205, 101);
+  --GreenColor: rgb(164, 255, 175);
+  --white-color: rgb(230, 229, 234);
+  --Greycolor: rgb(128, 124, 146);
+  --black-color: rgb(24, 23, 31);
+  --dark-grey-color: rgb(36, 35, 44);
+}
+
+.generate-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--GreenColor);
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  width: 100%;
+  border: 1px solid transparent;
+  color: #000;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.generate-btn:hover {
+  border-color: var(--GreenColor);
+  color: var(--GreenColor);
+  background-color: var(--black-color);
+}

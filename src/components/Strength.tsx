@@ -22,7 +22,7 @@ const getStrengthText = (value: number): string => {
 const Strength: React.FC<StrengthProps> = ({ length, includeUppercase, includeLowercase, includeNumbers, includeSymbols }) => {
   const calculateStrength = () => {
     if (!(includeUppercase || includeLowercase || includeNumbers || includeSymbols)) {
-      return 1;
+      return 0;
     }
 
     let strength = (length / 10) * 2;

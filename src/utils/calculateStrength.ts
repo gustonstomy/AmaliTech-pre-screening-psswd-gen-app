@@ -14,7 +14,7 @@ function calculateStrength({
   includeSymbols,
 }: StrengthOptions): number {
   if (!(includeUppercase || includeLowercase || includeNumbers || includeSymbols)) {
-    return 1;
+    return 0;
   }
   
   let strength = (length / 10) * 2;

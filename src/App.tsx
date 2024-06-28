@@ -7,14 +7,15 @@ import IncludeSymbols from "./components/IncludeSymbols";
 import { generatePassword } from "./utils/generatePassword";
 import PasswordDisplay from "./components/PasswordDisplay";
 import Strength from "./components/Strength";
+import GenerateButton from "./components/Button";
 
 
 function App() {
   const [password, setPassword] = useState<string | null>(null);
-  const [passwordLength, setPasswordLength] = useState<number>(4);
-  const [includeUppercase, setIncludeUppercase] = useState<boolean>(true);
-  const [includeLowercase, setIncludeLowercase] = useState<boolean>(true);
-  const [includeNumbers, setIncludeNumbers] = useState<boolean>(true);
+  const [passwordLength, setPasswordLength] = useState<number>(0);
+  const [includeUppercase, setIncludeUppercase] = useState<boolean>(false);
+  const [includeLowercase, setIncludeLowercase] = useState<boolean>(false);
+  const [includeNumbers, setIncludeNumbers] = useState<boolean>(false);
   const [includeSymbols, setIncludeSymbols] = useState<boolean>(false);
   function handleGeneratePassword (){
     const newPassword = generatePassword ({
@@ -59,12 +60,7 @@ function App() {
           includeNumbers={includeNumbers}
           includeSymbols={includeSymbols}
         />
-        <button onClick={handleGeneratePassword}
-        className="px-4 py-2 bg-GreenColor rounded-md
-        shadow-md w-full border text-black border-solid 
-        hover:border-GreenColor 
-        hover:text-GreenColor hover:bg-Greycolor transition-all duration-300 uppercase">
-        Generate</button>
+        <GenerateButton handleClick={handleGeneratePassword}/>
       </div>
     </div>
   );
