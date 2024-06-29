@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AiOutlineCopy } from "react-icons/ai";
+import { FaRegCopy } from "react-icons/fa";
 import '../styles/PasswordDisplay.css';
 
 type PasswordDisplayProps = {
@@ -31,7 +31,7 @@ export default function PasswordDisplay({ password }: PasswordDisplayProps) {
         onClick={handleCopy}
       >
         {isCopied && <span className="copied-text">Copied</span>}
-        <AiOutlineCopy className="copy-icon" />
+        <FaRegCopy className="copy-icon" />
       </button>
     </div>
   );

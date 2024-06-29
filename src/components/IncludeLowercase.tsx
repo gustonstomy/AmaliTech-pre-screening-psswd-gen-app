@@ -1,9 +1,11 @@
 import { ChangeEvent } from "react";
+import "../styles/checkboxes.css";
 
 type IncludeLowercaseProps = {
   includeLowercase: boolean;
   setIncludeLowercase: (include: boolean) => void;
 };
+
 export default function IncludeLowercase({
   includeLowercase,
   setIncludeLowercase,
@@ -12,15 +14,18 @@ export default function IncludeLowercase({
     setIncludeLowercase(!includeLowercase);
   }
   return (
-    <div className="mb-2">
-      <input
+    <div className="checkbox-container">
+      
+      <label htmlFor="includeLowercase">
+        <input
         type="checkbox"
         id="includeLowercase"
         checked={includeLowercase}
-        className="mr-2"
+        className="checkbox-input"
         onChange={handleIncludeLowercaseChange}
       />
-      <label htmlFor="includeLowercase">Include Lowercase Letters</label>
+      <span className="check_box"></span>
+      Include Lowercase Letters</label>
     </div>
   );
 }

@@ -1,0 +1,49 @@
+.checkbox-container {
+  font-size: 18px;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-input {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--white-color);
+  cursor: pointer;
+  position: relative;
+}
+.checkbox-input:not(:checked) {
+  appearance: none;
+  background-color: var(--dark-grey-color);
+}
+.checkbox-input:checked {
+  background-color: var(--GreenColor);
+  border: none;
+}
+
+.checkbox-input:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.6rem;
+  height: 0.6rem;  
+}
+@media (max-width: 768px) {
+.sub-container{
+  width: 25rem;
+}
+}
+@media (max-width: 385px) {
+
+  .checkbox-container {
+  font-size: 12px;
+}
+
+.checkbox-input {
+  margin-right: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+}

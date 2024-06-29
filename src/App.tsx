@@ -8,6 +8,7 @@ import { generatePassword } from "./utils/generatePassword";
 import PasswordDisplay from "./components/PasswordDisplay";
 import Strength from "./components/Strength";
 import GenerateButton from "./components/Button";
+import Header from "./components/Header";
 
 
 function App() {
@@ -29,10 +30,10 @@ function App() {
   }
 
   return (
-    <div className="font-JetBrains flex flex-col justify-center items-center min-h-screen bg-black text-white">
-      <h1 className="text-Darkgrey-color py-5 fs-l">Password Generator</h1>
+    <div className="main-container">
+      <Header/>
       <PasswordDisplay password={password}/>
-      <div className="w-[20rem] bg-Greycolor p-4">
+      <div className="sub-container">
         <PasswordLength
           passwordLength={passwordLength}
           setPasswordLength={setPasswordLength}

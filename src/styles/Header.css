@@ -1,0 +1,19 @@
+.password-generator-title {
+  color: var(--Greycolor);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem; 
+  font-size: 32px; 
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .password-generator-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 385px) {
+.password-generator-title {
+    font-size: 12px;
+  }
+}

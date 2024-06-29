@@ -1,26 +1,31 @@
 import { ChangeEvent } from "react";
+import "../styles/checkboxes.css";
 
 type IncludeSymbolsProps = {
   includeSymbols: boolean;
   setIncludeSymbols: (include: boolean) => void;
 };
+
 export default function IncludeSymbols({
   includeSymbols,
   setIncludeSymbols,
 }: IncludeSymbolsProps) {
-  function handleIncludeSymbolsChange(event: ChangeEvent<HTMLInputElement>) {
+  function handleIncludeSymbolsChange(_event: ChangeEvent<HTMLInputElement>) {
     setIncludeSymbols(!includeSymbols);
   }
   return (
-    <div className="mb-2">
-      <input
+    <div className="checkbox-container">
+      
+      <label htmlFor="includeSymbols">
+        <input
         type="checkbox"
         id="includeSymbols"
         checked={includeSymbols}
-        className="mr-2"
+        className="checkbox-input"
         onChange={handleIncludeSymbolsChange}
       />
-      <label htmlFor="includeSymbols">Include Symbols Letters</label>
+      <span className="check_box"></span>
+      Include Symbols</label>
     </div>
   );
 }
