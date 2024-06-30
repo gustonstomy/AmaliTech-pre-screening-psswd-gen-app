@@ -1,30 +1,114 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Frontend Mentor - Password generator app solution
 
-Currently, two official plugins are available:
+This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of contents
 
-## Expanding the ESLint configuration
+- [Overview](#overview)
+  - [Usage](#Usage)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Project Structure](#Project Structure)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-- Configure the top-level `parserOptions` property like this:
+## Overview
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Installation
+To run this application locally, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Clone the repository:
+
+git clone https://github.com/gustonstomy/AmaliTech-pre-screening-psswd-gen-app.git
+
+cd password-generator
+
+npm install
+
+
+npm start
+
+
+### Usage
+Set Password Criteria: Use the provided options to select the criteria for your password, including length and character types (uppercase, lowercase, numbers, symbols).
+Generate Password: Click the "Generate" button to create a new password based on the selected criteria.
+Copy Password: Click the copy icon to copy the generated password to your clipboard.
+Check Password Strength: Observe the strength rating to ensure your password meets your security requirements.
+
+### The challenge
+
+Users should be able to:
+
+- Generate a password based on the selected inclusion options
+- Copy the generated password to the computer's clipboard
+- See a strength rating for their generated password
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Links
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+
+### Built with
+
+Technologies Used
+React
+TypeScript
+CSS (with custom properties)
+react-icons (for icons)
+- [React](https://reactjs.org/) - JS library
+
+### Project Structure
+
+password-generator/
+│
+├── public/
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   │   ├── Button.tsx
+│   │   ├── PasswordDisplay.tsx
+│   │   ├── PasswordLength.tsx
+│   │   ├── IncludeUppercase.tsx
+│   │   ├── IncludeLowercase.tsx
+│   │   ├── IncludeNumbers.tsx
+│   │   ├── IncludeSymbols.tsx
+│   │   ├── Strength.tsx
+│   │   └── ...
+│   ├── styles/
+│   │   ├── Button.css
+│   │   └── ...
+│   ├── utils/
+│   │   ├── generatePassword.ts
+│   │   └── ...
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── ...
+│
+├── package.json
+├── tsconfig.json
+├── README.md
+└── ...
+
+
+## Author
+
+- Website - [Guston Azamo](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@GustonStomy](https://www.twitter.com/GustonStomy)
+
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
+## Acknowledgments
+React
+TypeScript
+react-icons

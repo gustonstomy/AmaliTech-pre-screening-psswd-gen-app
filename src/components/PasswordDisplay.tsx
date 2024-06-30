@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { FaRegCopy } from "react-icons/fa";
-import '../styles/PasswordDisplay.css';
+// import { FaRegCopy } from "react-icons/fa";
+import '../styles/PasswordDisplay.css'; 
+import image from '../assets/images/icon-copy.svg';
+
 
 type PasswordDisplayProps = {
   password: string | null;
@@ -31,7 +33,8 @@ export default function PasswordDisplay({ password }: PasswordDisplayProps) {
         onClick={handleCopy}
       >
         {isCopied && <span className="copied-text">Copied</span>}
-        <FaRegCopy className="copy-icon" />
+        {/* <FaRegCopy className="copy-icon" /> */}
+        <img src={image} className="copy-icon" />
       </button>
     </div>
   );
