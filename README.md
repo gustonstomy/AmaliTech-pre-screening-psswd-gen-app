@@ -36,6 +36,7 @@ npm start
 
 
 ### Usage
+
 Set Password Criteria: Use the provided options to select the criteria for your password, including length and character types (uppercase, lowercase, numbers, symbols).
 Generate Password: Click the "Generate" button to create a new password based on the selected criteria.
 Copy Password: Click the copy icon to copy the generated password to your clipboard.
