@@ -10,6 +10,7 @@
   align-items: center;
   gap: 0.5rem;
   width: fit-content;
+  position: relative;
 }
 .checkbox input{
   position: absolute;
@@ -22,6 +23,7 @@
   width: 1.25rem;
   aspect-ratio: 1;
   border: 2px solid var(--white-color);
+  transition: border 0.3s, background-color 0.3s;
 }
 
 .check_box:hover{
@@ -32,10 +34,11 @@ input[type=checkbox]:checked~.check_box{
   background-image: url("../assets/images/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 0;
+  border: none;
 
 }
-input[type=checkbox]:focus-visible ~.check_box{
+
+.checkbox input:focus-visible + .check_box {
   outline: 2px dashed var(--white-color);
   outline-offset: 2px;
 }
