@@ -16,7 +16,7 @@ export default function IncludeNumbers({
   return (
     <div className="checkbox-container">
       
-      <label htmlFor="includeNumbers">
+      <label htmlFor="includeNumbers" className="checkbox">
         <input
         type="checkbox"
         id="includeNumbers"

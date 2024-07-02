@@ -16,7 +16,7 @@ export default function IncludeLowercase({
   return (
     <div className="checkbox-container">
       
-      <label htmlFor="includeLowercase">
+      <label htmlFor="includeLowercase" className="checkbox">
         <input
         type="checkbox"
         id="includeLowercase"

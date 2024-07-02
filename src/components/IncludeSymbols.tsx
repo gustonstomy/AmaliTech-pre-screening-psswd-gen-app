@@ -16,7 +16,7 @@ export default function IncludeSymbols({
   return (
     <div className="checkbox-container">
       
-      <label htmlFor="includeSymbols">
+      <label htmlFor="includeSymbols" className="checkbox">
         <input
         type="checkbox"
         id="includeSymbols"

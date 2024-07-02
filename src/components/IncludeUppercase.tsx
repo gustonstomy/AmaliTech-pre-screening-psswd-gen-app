@@ -16,7 +16,7 @@ export default function IncludeUppercase({
   return (
     <div className="checkbox-container">
       
-      <label htmlFor="includeUppercase">
+      <label htmlFor="includeUppercase" className="checkbox">
         <input
         type="checkbox"
         id="includeUppercase"
