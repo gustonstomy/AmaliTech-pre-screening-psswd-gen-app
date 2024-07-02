@@ -53,8 +53,9 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/
+
+- Live Site URL: https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/
 
 
 ### Built with
@@ -103,8 +104,8 @@ password-generator/
 
 ## Author
 
-- Website - [Guston Azamo](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Guston Azamo]https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/
+- Frontend Mentor - [@gustonstomy](https://www.frontendmentor.io/profile/Stomy1)
 - Twitter - [@GustonStomy](https://www.twitter.com/GustonStomy)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
