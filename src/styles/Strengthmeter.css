@@ -66,7 +66,8 @@
   font-size: 12px;
 }
 .scale_bar {
-  width: 0.3rem;
+  width: 0.4rem;
+  border: 1px solid rgb(230, 229, 234);
 }
 }
 
@@ -83,6 +84,7 @@
   font-size: 12px;
 }
 .scale_bar {
-  width: 0.3rem;
+  width: 0.4rem;
+  border: 1px solid rgb(230, 229, 234);
 }
 }
