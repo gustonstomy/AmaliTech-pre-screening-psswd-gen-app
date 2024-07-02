@@ -6,6 +6,9 @@
   font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
 }
+
+/* Media Screens */
+
 @media (max-width: 768px) {
   .password-generator-title {
     font-size: 18px;

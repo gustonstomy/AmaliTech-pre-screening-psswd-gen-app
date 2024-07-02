@@ -55,6 +55,8 @@
   font-size: 1rem;
 }
 
+
+/* Media Screens */
 @media (max-width: 385px) {
 .color-light {
    font-size: 12px;

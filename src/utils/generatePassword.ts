@@ -10,6 +10,7 @@ const UPPERCASE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const NUMBERS = "0123456789";
 const SYMBOLS = "!@#$%^&*()_-+={}[]|;:<>,.?/~`";
 
+// Generate function
 function generatePassword({
   length,
   includeUppercase,

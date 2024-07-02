@@ -30,6 +30,8 @@
   width: 0.6rem;
   height: 0.6rem;  
 }
+
+/* Media Screens */
 @media (max-width: 768px) {
 .sub-container{
   width: 25rem;

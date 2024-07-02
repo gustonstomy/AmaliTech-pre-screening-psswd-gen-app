@@ -17,6 +17,8 @@
   color: var(--GreenColor);
   background-color: var(--black-color);
 }
+
+/* Media Screens */
 @media (max-width: 768px) {
 .sub-container{
   width: 25rem;

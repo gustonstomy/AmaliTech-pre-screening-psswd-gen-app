@@ -6,6 +6,7 @@ type StrengthOptions = {
   includeSymbols: boolean;
 };
 
+// Strength metter function
 function calculateStrength({
   length,
   includeUppercase,
