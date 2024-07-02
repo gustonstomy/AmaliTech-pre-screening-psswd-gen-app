@@ -11,10 +11,14 @@
   border: 2px solid var(--white-color);
   cursor: pointer;
   position: relative;
+  border-radius: 0;
 }
 .checkbox-input:not(:checked) {
   appearance: none;
   background-color: var(--dark-grey-color);
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .checkbox-input:checked {
   background-color: var(--GreenColor);
@@ -29,6 +33,7 @@
   transform: translate(-50%, -50%);
   width: 0.6rem;
   height: 0.6rem;  
+  border-radius: 0;
 }
 
 /* Media Screens */

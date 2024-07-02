@@ -10,22 +10,26 @@
   font-size: 18px;
   font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
+  border-radius: 0;
 }
 
-.generate-btn:hover {
+.generate-btn:hover,
+.generate-btn.touched {
   border-color: var(--GreenColor);
   color: var(--GreenColor);
   background-color: var(--black-color);
+  border-radius: 0;
 }
 
 /* Media Screens */
 @media (max-width: 768px) {
-.sub-container{
-  width: 25rem;
+  .sub-container {
+    width: 25rem;
+  }
 }
-}
+
 @media (max-width: 385px) {
-.generate-btn {
-  padding: 0.5rem 0.5rem;
-}
+  .generate-btn {
+    padding: 0.5rem 0.5rem;
+  }
 }
