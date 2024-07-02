@@ -46,6 +46,9 @@ input[type=checkbox]:focus-visible ~.check_box{
 .sub-container{
   width: 25rem;
 }
+.check_box{
+  width: 1rem;
+}
 }
 @media (max-width: 385px) {
 
@@ -57,5 +60,8 @@ input[type=checkbox]:focus-visible ~.check_box{
   margin-right: 0.5rem;
   width: 0.7rem;
   height: 0.7rem;
+}
+.check_box{
+  width: 1rem;
 }
 }
