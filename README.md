@@ -53,10 +53,10 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Links
-- Solution URL:https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/
+- Solution URL:[https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/](https://amalitech-pre-screening-psswd-gen-app.onrender.com)
 
-- Live Site URL: https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/
-
+- Live Site URL: [https://gustonstomy.github.io/AmaliTech-pre-screening-psswd-gen-app/
+](https://amalitech-pre-screening-psswd-gen-app.onrender.com)
 
 ### Built with
 
